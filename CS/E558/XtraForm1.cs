@@ -4,7 +4,7 @@ using System;
 
 namespace E558
 {
-    public partial class XtraForm1 : AppointmentRecurrenceForm
+    public partial class XtraForm1 : LegacyAppointmentRecurrenceForm
     {
         public XtraForm1(Appointment pattern, FirstDayOfWeek fdow, AppointmentFormController afc)
             : base(pattern, fdow, afc)
