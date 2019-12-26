@@ -56,11 +56,11 @@ Namespace E558
 
 		End Sub
 		Protected Overrides Sub SetRecurrenceType(ByVal type As RecurrenceType)
-			If type Is RecurrenceType.Hourly AndAlso checkEdit1 IsNot Nothing Then
-					checkEdit1.Checked = True
-					Return
-			End If
-				MyBase.SetRecurrenceType(type)
+            If type = RecurrenceType.Hourly AndAlso checkEdit1 IsNot Nothing Then
+                checkEdit1.Checked = True
+                Return
+            End If
+            MyBase.SetRecurrenceType(type)
 		End Sub
 	End Class
 End Namespace
